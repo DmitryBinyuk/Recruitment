@@ -1,0 +1,90 @@
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+span,
+a,
+mark {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  background: none;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  font-size: 14px;
+}
+#wrapper {
+  overflow: hidden;
+}
+table {
+  width: 100%;
+  table-layout: inherit;
+}
+table tbody tr th {
+  background: lightgray;
+}
+table tbody tr td,
+table tbody tr th {
+  padding: 5px;
+}
+table tbody tr td:last-child,
+table tbody tr th:last-child {
+  width: 30%;
+}
+table tbody tr col {
+  width: auto;
+}
+.chosen-container {
+  float: right;
+  margin: 15px 110px 15px 0;
+}
+.chosen-single {
+  width: 195px;
+  height: 52px !important;
+  background: white !important;
+  border-radius: 5px !important;
+  align-items: center !important;
+  display: flex !important;
+  border: 2px solid green !important;
+  justify-content: center;
+  text-align: center;
+}
+.chosen-single span {
+  display: block;
+  font-size: 15px;
+}
+.chosen-single div {
+  width: 35px !important;
+}
+.chosen-single div b {
+  background: url("/images/Screenshot_1.png") 50% 50% no-repeat !important;
+}
+.chosen-drop {
+  width: 195px !important;
+}
+.chosen-drop ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.chosen-drop ul li {
+  width: 100%;
+  padding: 5px 10px;
+}
+.no_records{
+    width: 100%;
+    text-align: center;
+    margin-top: 85px;
+}
+.container{
+    min-height: 100vh;
+}
