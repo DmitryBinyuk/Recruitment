@@ -25,7 +25,7 @@ class PositionController extends Controller
 
 	return view('recruitment.positions', compact('positions'));
     }
-
+    
     /**
      * Ajax handler for status filter
      *
