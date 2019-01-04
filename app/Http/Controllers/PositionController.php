@@ -34,6 +34,7 @@ class PositionController extends Controller
      */
     public function statusFilter(Request $request)
     {
+
 	$status = $request->input('status');
 
 	$query = \DB::table('positions')
