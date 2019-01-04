@@ -64,6 +64,11 @@
 		    @else
 			<p class="no_records">There are no positions</p>
 		    @endif
+		    
+		    <iframe src="http://ditaso.local/job-openings-iframe/Company2?&color=blue" width="468" height="600" align="left">
+			Ваш браузер не поддерживает плавающие фреймы!
+		     </iframe>
+		     <a href='http://ditaso.local/job-openings/Company2' > aaa</a>
 		</div>
         </div>
     </div>

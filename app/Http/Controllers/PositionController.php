@@ -35,6 +35,7 @@ class PositionController extends Controller
     public function statusFilter(Request $request)
     {
 	$status = $request->input('status');
+
 	$query = \DB::table('positions')
 		    ->leftJoin('recruiters', 'positions.recruiter_id', '=', 'recruiters.id')
 		    ->orderBy('positions.recruiter_id')
