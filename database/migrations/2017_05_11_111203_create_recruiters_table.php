@@ -19,6 +19,11 @@ class CreateRecruitersTable extends Migration
             $table->string('email')->unique();
             $table->string('company_name');
         });
+
+        Schema::table('positions', function (Blueprint $table) {
+            $table->integer('recruiter_id')->unsigned()->index();
+            $table->foreign('recruiter_id')->references('id')->on('recruiters')->onDelete('cascade');
+        });
     }
 
     /**

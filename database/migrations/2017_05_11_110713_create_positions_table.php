@@ -18,10 +18,7 @@ class CreatePositionsTable extends Migration
             $table->string('job_name');
             $table->text('job_description');
             $table->date('job_created');
-	    $table->enum('status', ['open', 'closed']);;
-
-	    $table->integer('recruiter_id')->unsigned()->index();
-	    $table->foreign('recruiter_id')->references('id')->on('recruiters')->onDelete('cascade');
+	        $table->enum('status', ['open', 'closed']);
         });
     }
 
